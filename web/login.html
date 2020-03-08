@@ -1,0 +1,59 @@
+
+<div class="container" id="login">
+    <div class="titulo">
+        <h2>Login</h2>
+    </div>
+    <div id="separador" ></div>
+    <div class="formulario flex-box">
+        <form action="login()" method="get" class="form-group">
+            <div id="confirmacion">
+                <div class="avisos alert alert-danger" role="alert">
+                    <i class="fas fa-exclamation-triangle"></i>El usuario o contraseña es incorrecto
+                </div>
+            </div>
+            <div class="form-group">
+                <input class="form-control" 
+                        type="email" 
+                        name="email"
+                        id="email" 
+                        required pattern="[a-z0-9._/%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                        placeholder="email">
+            </div>
+            <div id="mal_email" class="avisos text-danger animated fadeIn">
+                <small>El email es incorrecto</small>
+            </div> 
+
+            <div class="form-group">
+                <input class="form-control"
+                        type="password" 
+                        name="password"
+                        id="password"
+                        required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                        placeholder="Password">
+                <span class="focus-input100"></span>
+            </div>
+            <div id="mal_pass" class="avisos text-danger animated fadeIn">
+                <small>El password tiene que ser con longitud mínima de 8, una mayúscula, una minúscula y un número</small>
+            </div> 
+            
+            <div class="flex-sb-m">
+                <div class="reg">
+                    <a class="registro" href="#" onclick="Cargar('registro.html','cuerpo')">
+                        ¿No tienes cuenta?
+                    </a><br>
+                    <a class="registro" href="#" >
+                        ¿Has olvidado la contraseña?
+                    </a>
+                </div>
+            </div>
+
+            <div class="boton">
+                <button id="boton"class="btn btn-dark" type="submit" onclick="validar_login()">
+                    Ingresar
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+

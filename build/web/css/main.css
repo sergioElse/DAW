@@ -1,0 +1,157 @@
+/*General*/
+#cuerpo{
+    min-height: 72vh;
+}
+.avisos{
+    display: none;
+}
+.form-group{
+    margin-top:1rem;
+    margin-bottom:0 !important;
+}
+#separador{
+    border-bottom-color:#eeeeee;
+    width:100%;
+    border-bottom-style:solid;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.titulo{
+    text-align: center;
+}
+
+#contacto a, #login a{
+    color: black !important;
+}
+#contacto a:hover, #login a:hover{
+    color: black !important;
+}
+
+/*Navbar*/
+.imagen_logo{
+    max-width: 50px;
+    border-radius: 25px;
+}
+.container{
+    margin-top:2%;
+}
+
+/*Inicio*/
+.imagen_inicio{
+    margin: 0 auto;
+    display: block;
+    max-width: 21%;
+}
+
+/*LOGIN*/
+.main_login{
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 5% 0;
+}
+.mal_email, .mal_pass{
+    display: none;
+}
+.reg{
+    margin: 6% 0;
+}
+
+/*REGISTRO*/
+.formulario.flex-box {
+    max-width: 370px;
+    margin: 6% auto;
+}
+form#registro div.d-flex.justify-content-center.botones button.btn.btn-dark{
+    margin: 10% 0;    
+}
+
+/*Empresa*/
+.foto_instalaciones{
+    max-width: 85%;
+}
+.texto_valencia{
+    margin-top: 6%;
+}
+.col-inner{
+    text-align: center;
+}
+
+/*Productos*/
+.card{
+    width: 270px;
+    margin:10px 10px 0 0;
+
+}
+#cuerpo > div > div > div.flex-container.flex-wrap.d-flex.justify-content-center > div:nth-child(4n){
+    margin-right:0%;
+}
+.card-img-top{
+    max-height: 178px;
+}
+div.card div.card-body div.botones input#unidades.form-control{
+    width: 29% !important;
+    margin-right: 10%;
+    position: relative;
+    float:left;
+}
+/*CONTACTO*/
+.contenido {
+    max-width: 144px;
+    margin: 6% auto;
+}
+.botones{
+   margin: 6% 0; 
+}
+button.btn:nth-child(1){
+    margin-right: 3%;
+}
+.mapa{
+    width: 100%;
+}
+
+
+/*Footer*/
+footer {
+    background: #16222A;
+    background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+    background: linear-gradient(59deg, #3A6073, #16222A);
+    color: white;
+    margin-top:100px;
+}
+.footer-copyright{
+    position: relative;
+    top: -18%;
+}
+
+
+/*RESPONSIVE*/
+
+
+@media (max-width:1024px){
+}
+
+@media (max-width:768px){
+}
+
+@media (max-width:414px){
+    .imagen_inicio{
+        max-width: 50%;
+    }
+    .titulo{
+        margin-top: 10%;
+    }
+    .mapa{
+        padding:4%;
+        margin-top:13%;
+    }
+   
+    .navbar-horizontal{
+        display: flex;
+        flex-direction: row;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+}
+
+

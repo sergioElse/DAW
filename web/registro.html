@@ -1,0 +1,116 @@
+<div class="container">
+	<div class="titulo">
+        <h2>Formulario de registro</h2>
+    </div>
+    <div id="separador"></div>
+	<div class="formulario flex-box">
+		<form action="http://www.uv.es" method="post" id="registro">
+			<div class="contenido_formulario">
+				<!-- Nombre -->
+	            <div class="form-group">
+	                <input class="form-control" 
+	                    type="text" 
+	                    name="nombre"
+	                    id="nombre"
+	                    autofocus="autofocus" 
+	                    required pattern="[a-zA-Z ]{1,50}$"
+	                    placeholder="Nombre *">
+	            </div>
+	            <div class="avisos text-danger animated fadeIn" id="mal_nombre">
+	            	<small>El nombre es obligatorio y solo puede constar de caracteres</small>
+	        	</div>
+	        	<!-- Apellidos -->
+	            <div class="form-group">
+	                <input class="form-control" 
+	                    type="text" 
+	                    name="ape"
+	                    id="ape"
+	                    required pattern="[a-zA-Z ]{1,50}$"
+	                    placeholder="Apellidos *">
+	            </div>
+	            <div id="mal_ape" class="avisos text-danger animated fadeIn" >
+	            	<small>El apellido es obligatorio y solo puede constar de caracteres</small>
+	        	</div>
+	            <!-- Correo -->
+	            <div class="form-group">
+					<input class="form-control" 
+						type="email"
+						id="email"
+						name="email"
+						required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+						placeholder="Correo Electrónico *">
+				</div>
+				<div class="avisos text-danger animated fadeIn" id="mal_correo">
+	            	<small>El email es obligatorio</small>
+	        	</div>
+	        	<!-- Password -->
+	        	<div class="form-group">
+	                <input class="form-control"
+	                        type="password" 
+	                        name="password"
+	                        id="password"
+	                        required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+	                        placeholder="Password *">
+	                <span class="focus-input100"></span>
+	            </div>
+	            <div id="mal_pass" class="avisos text-danger animated fadeIn">
+	                <small>El password tiene que ser con longitud mínima de 8, una mayúscula, una minúscula y un número</small>
+	            </div> 
+				<!-- Telefono -->
+	            <div class="form-group">
+	                <input class="form-control" 
+	                    type="tel" 
+	                    id="tel"
+	                    name="telefono"
+	                    pattern="^(\+34|0034|34)?[6|7|8|9][0-9]{8}$"
+	                    placeholder="Teléfono">
+	            </div>
+	            <div class="avisos text-danger animated fadeIn" id="mal_tel">
+	            	<small>El teléfono es obligatorio y consta de 9 números</small>
+	        	</div>
+	        	<!-- Localidad -->
+                <div class="form-group">
+                    <input class="form-control" 
+                        type="text" 
+                        id="localidad"
+                        name="localidad" 
+                        required pattern="[a-zA-Z ]{1,50}$"
+                        placeholder="Localidad *">
+                </div>
+                <div class="avisos text-danger animated fadeIn" id="mal_localidad">
+                	<small>La localidad es obligatoria y con una longitud máxima de 50</small>
+            	</div>
+                <!-- Provincia -->
+                <div class="form-group">
+                    <input class="form-control" 
+                        type="text" 
+                        id="provincia"
+                        name="provincia"
+                        required pattern="[a-zA-Z ]{1,50}$"
+                        placeholder="Provincia *">
+                </div>
+                <div class="avisos text-danger animated fadeIn" id="mal_provincia">
+                	<small>La provincia es obligatoria y con una longitud máxima de 50</small>
+            	</div>
+                <!-- CP -->
+		        <div class="form-group">
+                    <input class="form-control" 
+                        type="text" 
+                        id="cp"
+                        name="cp"
+                        required pattern="((0[1-9]|5[0-2])|[1-4][0-9])[0-9]{3}"
+                        placeholder="Código Postal *">
+                </div>
+                <div class="avisos text-danger animated fadeIn" id="mal_cp">
+                	<small>No cumple el formato establecido</small>
+            	</div>
+            	            
+        	</div> 
+	        <div class="d-flex justify-content-center botones">
+	            <button class="btn btn-dark" type="submit" onclick="validar_formulario()">
+	                Crear usuario
+	            </button>
+	    	</div>
+	    </form>
+  	</div>
+</div>
